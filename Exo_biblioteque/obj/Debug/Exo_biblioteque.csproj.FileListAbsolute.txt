@@ -9,3 +9,14 @@ C:\Users\damie\Documents\CDA\bibli\git\bibliotheque\Exo_biblioteque\bin\Debug\Ex
 C:\Users\damie\Documents\CDA\bibli\git\bibliotheque\Exo_biblioteque\bin\Debug\Exo_biblioteque.pdb
 C:\Users\damie\Documents\CDA\bibli\git\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.exe
 C:\Users\damie\Documents\CDA\bibli\git\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.pdb
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\bin\Debug\Exo_biblioteque.exe.config
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\bin\Debug\Exo_biblioteque.exe
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\bin\Debug\Exo_biblioteque.pdb
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.AssemblyReference.cache
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.SuggestedBindingRedirects.cache
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.Form1.resources
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.Properties.Resources.resources
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.GenerateResource.cache
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.CoreCompileInputs.cache
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.exe
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.pdb

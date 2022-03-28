@@ -32,6 +32,7 @@ namespace Exo_biblioteque
             livre.Isbn = isbn;
 
             ListViewItem item = new ListViewItem(livre.Titre);
+
             item.SubItems.Add(livre.Isbn.ToString());
             listView1.Items.Add(item);
 
@@ -43,13 +44,12 @@ namespace Exo_biblioteque
         {
             try
             {
-                int index = ((ListView)(sender)).SelectedIndices.IndexOf(0);    
-                var selectedItem = (Livre)((List<Livre>)listView1.Tag)[index];
+                var selectedItem = (Livre)listView1.SelectedItems[0].Tag;
                 if (selectedItem != null)
                 {
                     MessageBox.Show(selectedItem.ToString(), "détails du livre", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }    
-                
+                }
+
             }
             catch (Exception ex)
             {
