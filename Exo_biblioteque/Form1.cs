@@ -52,7 +52,7 @@ namespace Exo_biblioteque
             }
             catch (Exception ex)
             {
-
+                //bonjour
             }
         }
     }
