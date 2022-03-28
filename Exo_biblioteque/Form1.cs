@@ -36,14 +36,15 @@ namespace Exo_biblioteque
             listView1.Items.Add(item);
 
             listLivre.Add(livre);
-
+            listView1.Tag = listLivre;
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
-                var selectedItem = (Livre)listView1.SelectedItems[0].Tag;
+                int index = ((ListView)(sender)).SelectedIndices.IndexOf(0);    
+                var selectedItem = (Livre)((List<Livre>)listView1.Tag)[index];
                 if (selectedItem != null)
                 {
                     MessageBox.Show(selectedItem.ToString(), "détails du livre", MessageBoxButtons.OK, MessageBoxIcon.Information);
