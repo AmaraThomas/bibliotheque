@@ -32,6 +32,7 @@ namespace Exo_biblioteque
             livre.Isbn = isbn;
 
             ListViewItem item = new ListViewItem(livre.Titre);
+
             item.SubItems.Add(livre.Isbn.ToString());
             listView1.CheckBoxes = true;
             listView1.Items.Add(item);
@@ -58,12 +59,12 @@ namespace Exo_biblioteque
                     richTextBox1.Text = selectedItem.Titre;
                     richTextBox2.Text = selectedItem.Isbn.ToString();
                     //MessageBox.Show(selectedItem.ToString(), "détails du livre", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }    
-                
+                }                  
+
             }
             catch (Exception ex)
             {
-                //bon pour un tour en voiture télécommandé pour thomas
+                //UN GRAND CHNGEMENT
             }
         }
 
