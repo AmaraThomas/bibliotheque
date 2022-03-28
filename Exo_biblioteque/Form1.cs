@@ -36,7 +36,9 @@ namespace Exo_biblioteque
             listView1.CheckBoxes = true;
             listView1.Items.Add(item);
 
+
             listLivre.Add(livre);
+            //on ajoute le tag
             listView1.Tag = listLivre;
             richTextBox1.Clear();
             richTextBox2.Clear();   
@@ -46,8 +48,11 @@ namespace Exo_biblioteque
         {
             try
             {
+                //recupere l'index de l'élément selectionner
                 int indexI = ((ListViewItem)listView1.SelectedItems[0]).Index;
+                //recupere l'item selon l'index qui sont stocker dans le tag plus haut
                 var selectedItem = (Livre)((List<Livre>)listView1.Tag)[indexI];
+
                 if (selectedItem != null)
                 {
                     richTextBox1.Text = selectedItem.Titre;
@@ -64,10 +69,12 @@ namespace Exo_biblioteque
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
+            //on recup l'index et on change le 1er element et le deuxiement de la ligne
             int indexI = listView1.SelectedItems[0].Index;
             string subI0 = listView1.SelectedItems[0].SubItems[0].Text = richTextBox1.Text;
             string subI1 = listView1.SelectedItems[0].SubItems[1].Text = richTextBox2.Text;
 
+            //on edit la list de livre
             string titreText = richTextBox1.Text;
             int isbnText = Convert.ToInt32(richTextBox2.Text);
             listLivre[indexI].Titre = titreText;
