@@ -20,3 +20,6 @@ C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteq
 C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.CoreCompileInputs.cache
 C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.exe
 C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.pdb
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.CopyComplete
