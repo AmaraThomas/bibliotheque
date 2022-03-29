@@ -23,3 +23,6 @@ C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteq
 C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Thoma\source\repos\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.CopyComplete
+C:\Users\damie\Documents\CDA\bibli\git\bibliotheque\Exo_biblioteque\bin\Debug\Newtonsoft.Json.dll
+C:\Users\damie\Documents\CDA\bibli\git\bibliotheque\Exo_biblioteque\bin\Debug\Newtonsoft.Json.xml
+C:\Users\damie\Documents\CDA\bibli\git\bibliotheque\Exo_biblioteque\obj\Debug\Exo_biblioteque.csproj.CopyComplete
