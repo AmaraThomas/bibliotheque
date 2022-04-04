@@ -1,10 +1,13 @@
 ﻿using Exo_biblioteque.models;
+using Exo_biblioteque.database;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using System.Text;
+using MySql.Data.MySqlClient;
+using System.Diagnostics;
 
 namespace Exo_biblioteque
 {
@@ -12,16 +15,42 @@ namespace Exo_biblioteque
     {
         List<Livre> listLivre = new List<Livre>();
         List<Abonne> listAbonne = new List<Abonne>();
-
+        connectBDD sqlconnect = new connectBDD();
+        List<Livre> loadListeLivre = new List<Livre>();
         public Form1()
         {
             InitializeComponent();
+            MySqlConnection conn = sqlconnect.sqlConnect();
+            var infos = sqlconnect.ReadDB(conn,listLivre);
+            
+            Livre livre;
+            if (infos.HasRows)
+            {
+                while (infos.Read())
+                {
+                    ListViewItem item = new ListViewItem(infos.GetString(1));
+                    item.SubItems.Add(infos.GetString(2));
+                    listView1.Items.Add(item);
+                    livre = new Livre()
+                    {
+                        Titre = infos.GetString(1),
+                        Isbn = Convert.ToInt32(infos.GetString(2))
+                    };
+
+                    loadListeLivre.Add(livre);
+
+                   /* for(int i = 0; i < infos.GetString(0).Length; i++)
+                    listView1.Tag = infos.GetString(i);*/
+                }
+            }
+            listView1.Tag = loadListeLivre;
+            infos.Close();
+            conn.Close();
+            
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-
-
             string titre = richTextBox1.Text;
             int isbn = Convert.ToInt32(richTextBox2.Text);
             Livre livre = new Livre();
@@ -39,7 +68,11 @@ namespace Exo_biblioteque
             //on ajoute le tag
             listView1.Tag = listLivre;
             richTextBox1.Clear();
-            richTextBox2.Clear();   
+            richTextBox2.Clear();
+
+            MySqlConnection conn = sqlconnect.sqlConnect();
+           sqlconnect.InsertDB(conn, listLivre);
+
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,12 +108,13 @@ namespace Exo_biblioteque
             //on edit la list de livre
             string titreText = richTextBox1.Text;
             int isbnText = Convert.ToInt32(richTextBox2.Text);
-
-            listLivre[indexI].Titre = titreText;
-            listLivre[indexI].Isbn = isbnText;
+            //enregistre dans la listView
+            loadListeLivre[indexI].Titre = titreText;
+            loadListeLivre[indexI].Isbn = isbnText;
 
             richTextBox1.Clear();
             richTextBox2.Clear();
+            //TODO: enregistrer dans la base de donnée aprés modifcation
         }
 
         private void ButtonSup_Click(object sender, EventArgs e)
